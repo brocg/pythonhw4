@@ -134,8 +134,10 @@ def stringBits(str):
 def end_other(a, b):
   # CODE GOES HERE
 
+
+
     #####################
-    ## -- PROBLEM 9 -- ##
+    ## -- PROBLEM 9 -- ## - COMPLETE
     #####################
 
     # Given a string, return a string where for every char in the original,
@@ -144,13 +146,18 @@ def end_other(a, b):
     # doubleChar('The') → 'TThhee'
     # doubleChar('AAbb') → 'AAAAbbbb'
     # doubleChar('Hi-There') → 'HHii--TThheerree'
+    
+# def doubleChar(str):
+#   newStr = ''
+#   for x in str:
+#     newStr += x + x
+#   return newStr
+  
+# print(doubleChar("brock"))
 
-
-def doubleChar(str):
-  # CODE GOES HERE
 
     #####################
-    ## -- PROBLEM 10 -- ## - In Progress
+    ## -- PROBLEM 10 -- ## - COMPLETE
     #####################
 
     # Read this problem statement carefully!
@@ -170,13 +177,19 @@ def doubleChar(str):
     # no_teen_sum(2, 13, 1) → 3
     # no_teen_sum(2, 1, 14) → 3
 
+# def no_teen_sum(a, b, c):
+#   # CODE GOES HERE
+#   return fix_teen(a) + fix_teen(b) + fix_teen(c)
 
-def no_teen_sum(a, b, c):
-  # CODE GOES HERE
+# def fix_teen(n):
+#   # CODE GOES HERE
+#   if n == 15 or n == 16:
+#     return n
+#   return 0
+
+# print(no_teen_sum(15,15,16))
 
 
-def fix_teen(n):
-  # CODE GOES HERE
 
     #####################
     ## -- PROBLEM 11 -- ##
