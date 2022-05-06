@@ -1,7 +1,7 @@
 
 #################################################################
 ## Home Assignment - 4 ##
-## Name: type your name here
+## Name: Brock Gion
 ## Due Date: May 4 (Wednesday), 11.59 in Blackboard
 ## Type your answers in this python file and submit in blackboard.
 #################################################################
@@ -104,24 +104,26 @@
 
 
     #####################
-    ## -- PROBLEM 7 -- ##
+    ## -- PROBLEM 7 -- ## - COMPLETE
     #####################
 
     # Given a string, return a new string made of every other character starting
     # with the first, so "Hello" yields "Hlo".
 
-    # For example:
 
-    # stringBits('Hello') → 'Hlo'
-    # stringBits('Hi') → 'H'
-    # stringBits('Heeololeo') → 'Hello'
+# def stringBits(str):
+#   # CODE GOES HERE
+#   slice notation in python has the syntax [<start>:<stop>:<step>] 
+#   [::2] takes in the full string printing every other character
+#   return print(str[::2]) 
 
-
-def stringBits(str):
-  # CODE GOES HERE
+# # For example:
+# stringBits('Hello') #→ 'Hlo'
+# stringBits('Hi') #→ 'H'
+# stringBits('Heeololeo') #→ 'Hello'
 
     #####################
-    ## -- PROBLEM 8 -- ##
+    ## -- PROBLEM 8 -- ## - COMPLETE
     #####################
 
     # Given two strings, return True if either of the strings appears at the very end
@@ -130,16 +132,21 @@ def stringBits(str):
     #
     # Note: s.lower() returns the lowercase version of a string.
     #
-    # Examples:
-    #
-    # end_other('Hiabc', 'abc') → True
-    # end_other('AbC', 'HiaBc') → True
-    # end_other('abc', 'abXabc') → True
 
+# def end_other(a, b):
 
-def end_other(a, b):
-  # CODE GOES HERE
+#     a1 = a.lower()
+#     b1 = b.lower()
+ 
+#     if a1.endswith(b1) or b1.endswith(a1):
+#         return True
+#     else:
+#         return False
 
+# # Examples:
+# print(end_other('Hiabc', 'abc')) #→ True
+# print(end_other('AbC', 'HiaBc')) #→ True
+# print(end_other('abc', 'abXabc')) #→ True
 
 
     #####################
