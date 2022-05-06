@@ -34,33 +34,40 @@
 
 
 ###############
-## Problem 2 ##
+## Problem 2 ## - COMPLETE
 ###############
 
-# Given this nested list:
-l = [3, 7, [1, 4, 'hello']]
-# Reassign "hello" to be "goodbye"
-
+# # Given this nested list:
+# l = [3, 7, [1, 4, 'hello']]
+# # Reassign "hello" to be "goodbye"
+# l[2][2] = 'goodbye' #list items are indexed, so here you can manually replace. Another approach could be looping through list
+# print(l)
 
 ###############
-## Problem 3 ##
+## Problem 3 ## - COMPLETE
 ###############
 
 # Using keys and indexing, grab the 'hello' from the following dictionaries:
 
-d1 = {'simple_key': 'hello'}
+# d1 = {'simple_key': 'hello'}
+# print(d1['simple_key'])
 
-d2 = {'k1': {'k2': 'hello'}}
+# d2 = {'k1': {'k2': 'hello'}}
+# print(d2['k1']['k2'])
 
-d3 = {'k1': [{'nest_key': ['this is deep', ['hello']]}]}
+# d3 = {'k1': [{'nest_key': ['this is deep', ['hello']]}]}
+# print(d3['k1'][0]['nest_key'][1][0])
 
 
 ###############
-## Problem 4 ##
+## Problem 4 ## - COMPLETE
 ###############
 
 # Use a set to find the unique values of the list below:
-mylist = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
+# mylist = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
+# myset = set(mylist)
+# for uniquevalue in myset:
+#     print(uniquevalue)
 
 
 # ###############
@@ -74,28 +81,27 @@ mylist = [1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
 # # Use print formatting to print the following string:
 # #"Hello my dog's name is Sammy and he is 4 years old"
 
-# print("Hello my dog's name is", name, "and he is", age, "years old")
-
-
+# print(f"Hello my dog's name is {name} and he is {age} years old")
 
 
 # Complete the tasks below by writing functions! 
 
 #####################
-## -- PROBLEM 6 -- ##
+## -- PROBLEM 6 -- ## - COMPLETE
 #####################
 
 # Given a list of integers, return True if the sequence of numbers 1, 2, 3
 # appears in the list somewhere.
 
+# def arrayCheck(nums):
+#     # CODE GOES HERE
+#     return str([1, 2, 3])[1:-1] in str(nums) #explicity typecasting both to strings, so comparing the sequence of '1,2,3' to the list '1,1,2,3,1', then returns T/F boolean
+
 # For example:
+# print(arrayCheck([1, 1, 2, 3, 1])) # → True
+# print(arrayCheck([1, 1, 2, 4, 1])) # → False
+# print(arrayCheck([1, 1, 2, 1, 2, 3])) # → True
 
-# arrayCheck([1, 1, 2, 3, 1]) → True
-# arrayCheck([1, 1, 2, 4, 1]) → False
-# arrayCheck([1, 1, 2, 1, 2, 3]) → True
-
-def arrayCheck(nums):
-    # CODE GOES HERE
 
     #####################
     ## -- PROBLEM 7 -- ##
