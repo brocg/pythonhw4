@@ -205,19 +205,24 @@
 
 
     #####################
-    ## -- PROBLEM 11 -- ##
+    ## -- PROBLEM 11 -- ## - COMPLETE
     #####################
 
     # Return the number of even integers in the given array.
     #
-    # Examples:
-    #
-    # count_evens([2, 1, 2, 3, 4]) → 3
-    # count_evens([2, 2, 0]) → 3
-    # count_evens([1, 3, 5]) → 0
 
+# def count_evens(nums):
+#   # CODE GOES HERE
+#   count_even = 0
+#   for x in nums:
+#     if not x % 2: #even number
+#       count_even+=1
+#   return count_even
 
-def count_evens(nums):
-  # CODE GOES HERE
+# # Examples:
+# #
+# print(count_evens([2, 1, 2, 3, 4])) #→ 3
+# print(count_evens([2, 2, 0])) #→ 3
+# print(count_evens([1, 3, 5])) #→ 0
 
 
